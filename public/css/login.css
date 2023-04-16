@@ -1,0 +1,65 @@
+label{
+    font-weight: bold;
+}
+
+.list{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.login{
+    margin-top: 250px;
+}
+
+.sign-in-container{
+	width: 500px;
+    background-color: var(--cont-bg-color);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px var(--shadow);
+    line-height: 21px;
+    padding: 30px;
+    margin: auto;
+}
+
+.sign-up-option{
+    text-align: center;
+}
+
+input[type = email], input[type = password], select {
+    width: 100%;
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    display: block;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+.forgot-pswrd{
+    text-align: right;
+}
+
+.sign-in-btn {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 5px 12px;
+    line-height: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    appearance: none;
+}
+
+.error {
+    float: left;
+    color: crimson;
+}

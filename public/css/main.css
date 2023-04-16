@@ -1,0 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+:root{
+    --text-primary: #262626;
+    --text-accent: aliceblue;
+    --bg-color: #36c892, #223f85;
+    --cont-bg-color: #fafafa;
+    --border: #e8eaed;
+    --required: red;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --input-border: #ccc;
+    --title: aliceblue;
+    --user-img: aliceblue;
+    --footer: grey;
+    --hover: #223f85;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: var(--text-primary);
+	font-size: 14px;
+	line-height: 18px;
+    background: linear-gradient(to right,var(--bg-color));
+    display: grid;
+    place-items: center;
+}

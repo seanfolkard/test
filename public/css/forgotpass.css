@@ -1,0 +1,58 @@
+.list{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#forgot-pswrd{
+    margin-top: 250px;
+}
+
+.forgot-pswrd-container{
+	width: 500px;
+    background-color: var(--cont-bg-color);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px var(--shadow);
+    line-height: 21px;
+    padding: 0 30px 30px;
+}
+
+.required{
+    color: var(--required);
+}
+
+input[type = email], input[type = password], select {
+    width: 100%;
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+	display: inline-block;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+input[type = button], input[type = submit] {
+    text-align: center;
+    padding: 5px 12px;
+    line-height: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    appearance: none;
+}
+
+#back-btn{
+    width: 25%;
+	margin-right: 20px;
+}
+
+#reset-pass-btn {
+    width: 30%;
+    float:right;
+}

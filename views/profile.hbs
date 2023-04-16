@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/userpro.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<div class="user-profile container">
+        <div class="card">
+            <div class="info">
+                <b><span>User Profile</span></b>
+                <button id="savebutton">edit</button>
+                <button><a href="/login" id="donebutton">logout</a></button>
+            </div>
+            <form class="form" id ="user-profile" method="post">
+            <div class="forms">
+                <div class="inputs">
+                    <span>First Name:</span>
+                    <input type="text" readonly name="firstname" id="firstname" value={{firstname}}>
+            </div>
+                <div class="inputs">
+                    <span>Last Name:</span>
+                    <input type="text" readonly name="lastname" id="lastname" value={{lastname}}>
+                </div>
+                <div class="inputs">
+                    <span>Email:</span>
+                    <input type="text" readonly name="email" id="email" value={{email}}>
+                </div>
+                <div class="inputs">
+                    <span>Contact No.:</span>
+                    <input type="text" readonly name="contact" id="contact" value={{number}}>
+                </div>
+                <div class="inputs">
+                    <span>Date of Birth:</span>
+                    <input type="date" readonly name="dob" id="dob" value={{dob}}>
+                </div>
+                <div class="inputs">
+                    <span>Country:</span>
+                    <input type="text" readonly id="country" value="Philippines">
+                </div>
+            </div>
+            </form>
+            <hr>
+            <p class="regis">Past Registrations:<br>
+                <div id="pastreg">
+                    <li class="hist">02/28/2023 - PAREF Southridge School</li><br>
+                    <li class="hist">02/06/2023 - Manila Padel Club</li><br>
+                    <li class="hist">12/12/2022 - Studio 3000</li><br>
+                    <li class="hist">04/24/2022 - Circuit Makati Blue Pitch</li><br>
+                    <li class="hist">02/06/2022 - Manila Polo Club</li>
+                </div>
+            </p>
+        </div>
+    </div>
+<script src="/js/userpro.js"></script>

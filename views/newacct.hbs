@@ -1,0 +1,34 @@
+<div class = "new-account">
+    <div class = "create-account container">
+        <h2>Personal Information</h2>
+        <!-- action="homepage.html"  -->
+        <form class="form" id ="new-account" action="/login" method="post">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" required>
+            <label for="lastname" id ="lastname">Last Name</label>
+            <input type="text" name="lastname" required><br>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" required><span id="emailtaken"></span><br>
+            <label for="contact">Contact Number</label>
+            <input type="tel" name="contact" placeholder="09991234567">
+            <span class="light">(optional)</span><br>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob" required><br>
+            Gender<br>
+            <input type="radio" id="gender-female" name="gender" value="female" />
+            <label for="gender-female">Female</label>
+            <input type="radio" id="gender-male" name="gender" value="male" />
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender-null" name="gender" value="null" />
+            <label for="gender-null">Prefer not to say</label><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pass"><br>
+            <label for="password">Confirm Password</label>
+            <input type="password" name="confirmpass" id="pass2"><span id="notmatch"></span><br>
+            <input type="checkbox" name = "t&c" required>
+            <label for="t&c">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.</label><br><br>
+            <input type="button" value="Back" id = "back-btn" onclick="history.back()">
+            <input id="create-acct-btn" type="submit" value="Sign Up">
+        </form>
+    </div>
+</div>

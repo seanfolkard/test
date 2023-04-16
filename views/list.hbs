@@ -1,0 +1,260 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="/css/listings.css">
+<link rel = "stylesheet" href="/css/style.css">
+
+<div class="contain">
+    <form class="submit-bar" action="/list">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Filter</button>
+        <div class="dropdown-content">
+            <a href="#basketball">Basketball</a>
+            <a href="#football">Football</a>
+            <a href="#golf">Golf</a>
+            <a href="#tennis">Tennis</a>
+            <a href="#padel">Padel</a>
+            <a href="#vball">Volleyball</a>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    {{!-- <div class="venue" id="vne">
+        <div>
+            <img id="icon" src="/img/icons8-basketball-48.png" alt="bball icon" />
+            <img id="icon" src="/img/icons8-volleyball-53.png" alt="bball icon" />
+            <h3 class="venue-title" id="basketball">FilOil EcoOil Centre</h3>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8862261133618!2d121.03074671509225!3d14.605556489799323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b62ad62dda8d%3A0x5f846a993a86e9a3!2sFilOil%20EcoOil%20Centre!5e0!3m2!1sen!2sph!4v1679896085194!5m2!1sen!2sph" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><span>  (4.4)</span>
+                </p>
+            </div>
+            <div class="schedules">
+                <h4>Available Schedules: </h4>
+                    <li>Monday, April 3, 2023 - 12:00pm-02:00pm</li>
+                    <li>Monday, April 3, 2023 - 03:00pm-05:00pm</li><br>
+                    <li>Monday, April 3, 2023 - 05:00pm-07:00pm</li>
+                    <li>Tuesday, April 4, 2023 - 12:00pm-02:00pm</li><br><br>
+            </div>
+            <button class="modal-button" href="#myModal1">More Details</button>
+
+            <!-- The Modal -->
+            <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>FilOil EcoOil Centre</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Description: </h4><p>The Filoil EcoOil Centre, formerly Filoil Flying V Centre, Filoil Flying V Arena and The Arena in San Juan, also known as the Entertainment and Recreational Arena of the People, is an indoor sporting arena located along Bonny Serrano Avenue, Barangay Corazon de Jesus, San Juan, Metro Manila, Philippines.</p>
+                        <br><h4>Amenities Provided: </h4><p>2 Basketball Hoops <br>Net for Volleyball
+                        </p>
+                        <br><h4>Price: </h4><p>₱250/hour</p>
+                        <br><h4>Reviews: </h4><span>Not huge enough to cater big sport events with so much crowd. The place is literally in front of San Juan City Jail, you can see the prisoners looking at you from above if you are outside the arena. - Kevin Mark (a year ago; 3/5 stars)</span>
+                        <br><br><span>Nice place, seats are somewhat comfortable. Place need more parking though. - Yan Kaf (4 years ago; 4/5 stars)</span>
+                        <br><br><h4>Pictures:</h4><img id="modalpics" src="/img/filoil.jpg" /><img id="modalpics" src="/img/filoilarena.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="venue-button" onclick="window.location.href='/register';">Book Now</button>
+        </div>
+
+    <div class="venue">
+            <div>
+                <img id="icon" src="/img/icons8-soccer-ball-48.png" />
+                <h3 class="venue-title" id="football">Circuit Makati Blue Pitch</h3>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4132985438723!2d121.01850951509196!3d14.575509889818456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9ba92f3aca9%3A0x769c73b0d0953cb3!2sCircuit%20Makati%20Blue%20Pitch!5e0!3m2!1sen!2sph!4v1679895956633!5m2!1sen!2sph" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><span>  (4.5)</span>
+                </p>
+            </div>
+            <div class="schedules">
+                <h4>Available Schedules: </h4>
+                    <li>Monday, April 3, 2023 - 08:00pm-10:00pm</li>
+                    <li>Tuesday, April 4, 2023 - 10:00pm-12:00am</li><br>
+                    <li>Wedensday, April 5, 2023 - 08:00pm-10:00pm</li>
+                    <li>Thursday, April 6, 2023 - 10:00pm-12:00am</li><br><br>
+            </div>
+            <!-- Trigger/Open The Modal -->
+            <button class="modal-button" href="#myModal2">More Details</button>
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Circuit Makati Blue Pitch</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Description: </h4><p>Circuit Makati Blue Pitch is an outdoor football field located in Circuit Makati, a mixed-use development in Makati City, Philippines. The field features artificial turf, floodlights for night games, and spectator stands for up to 400 people. It is a popular venue for amateur football games and tournaments, as well as corporate and community events. Additionally, it is equipped with changing rooms, showers, and parking areas.</p>
+                        <br><h4>Amenities Provided: </h4><p>4 goal posts</p><p>Changing rooms, showers, and parking areas</p>
+                        <br><h4>Price: </h4><p>₱250/ 2 hours</p>
+                        <br><h4>Reviews: </h4><span>Well maintained facility. So much better to play ball games. Well lit throughout the night. Allied multiple ball games by several people - Anna Vista (3 months ago)</span>
+                        <br><br><span>The pitch is located beside Ayala Malls Circuit Makati. The facility is well-maintained and clean. Washrooms are found outside the pitch. There are coaches having their classes here aside from soccer competitions like the Golazo cup. - Khathrina Cerbulles (5 months ago)</span>
+                        <br><br><h4>Pictures:</h4><img id="modalpics" src="/img/bluepitch.jpg" /><img id="modalpics" src="../img/blue.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="venue-button" onclick="window.location.href='/register';">Book Now</button>
+        </div>
+
+        <div class="venue">
+            <div>
+                <h3 class="venue-title" id="padel">Manila Padel Club</h3>
+                <img id="icon" src="/img/icons8-tennis-racquet-48.png" />
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7915757918663!2d121.05039041483967!3d14.553908189832264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9113d688b99%3A0x1442dbf718141b04!2sManila%20Padel%20Club!5e0!3m2!1sen!2sph!4v1679967128731!5m2!1sen!2sph" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><span>  (4.1)</span>
+                </p>
+            </div>
+            <div class="schedules">
+                <h4>Available Schedules: </h4>
+                    <li>Monday, April 3, 2023 - 12:00pm-02:00pm</li>
+                    <li>Monday, April 3, 2023 - 03:00pm-05:00pm</li><br>
+                    <li>Monday, April 3, 2023 - 05:00pm-07:00pm</li>
+                    <li>Tuesday, April 4, 2023 - 12:00pm-02:00pm</li><br><br>
+            </div>
+            <button class="modal-button" href="#myModal3">More Details</button>
+
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">×</span>
+                            <h2>Manila Padel Club</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Description: </h4><p>It’s one of the world’s fastest-growing sports you have never heard of: padel, a new game that’s described as “tennis with walls” or “squash in the sun”. Challenge family and friends (or get matched with new friends) to one of the world’s trendiest sports.</p>
+                            <br><h4>Amenities Provided: </h4><p>5 padel courts<br>Changing rooms, showers, and parking areas<br>The Playground<br>El Chiringuito</p>
+                            <br><h4>Price: </h4><p>Regular Hours: ₱625/player (60 min playing time)<br>Off-Peak Hours (10am - 2pm):  ₱375/player (60 min playing time)</p>
+                            <br><h4>Reviews: </h4><span>Well maintained facility. So much better to play ball games. Well lit throughout the night. Allied multiple ball games by several people - Anna Vista (3 months ago)</span>
+                            <br><br><span>The pitch is located beside Ayala Malls Circuit Makati. The facility is well-maintained and clean. Washrooms are found outside the pitch. There are coaches having their classes here aside from soccer competitions like the Golazo cup. - Khathrina Cerbulles (5 months ago)</span>
+                            <br><br><h4>Pictures:</h4><img id="modalpics" src="/img/padel.jpg" /><img id="modalpics" src="/img/mnlpadel.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <button class="venue-button" onclick="window.location.href='/register';">Book Now</button>
+            </div>
+
+        <div class="venue">
+            <div>
+                <img id="icon" src="/img/icons8-golf-ball-48.png" />
+                <h3 class="venue-title" id="golf">Villamor Air Base Golf Course</h3>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.2971692642004!2d121.0164713262889!3d14.524986957387894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93266a7b821%3A0xd8f947ce1b556de0!2sVillamor%20Air%20Base%20Golf%20Course!5e0!3m2!1sen!2sph!4v1679896143085!5m2!1sen!2sph" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><span>  (4.2)</span>
+                </p>
+            </div>
+            <div class="schedules">
+                <h4>Available Schedules: </h4>
+                    <li>Monday, April 3, 2023 - 12:00pm-02:00pm</li>
+                    <li>Monday, April 3, 2023 - 03:00pm-05:00pm</li><br>
+                    <li>Monday, April 3, 2023 - 05:00pm-07:00pm</li>
+                    <li>Tuesday, April 4, 2023 - 12:00pm-02:00pm</li><br><br>
+            </div>
+             <!-- Trigger/Open The Modal -->
+            <button class="modal-button" href="#myModal4">More Details</button>
+
+            <!-- The Modal -->
+            <div id="myModal4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Villamor Air Base Golf Course</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Description: </h4><p>Villamor is an 18-hole par-72 championship golf course located on the corner of Lawton Avenue and South Super Highway.</p>
+                        <br><h4>Amenities Provided: </h4><p>Facilities include a driving range, practice putting greens, practice pitching greens, golfer’s lounge, tee house, pro shop, men’s and ladies’ changing rooms, massage facilities. </p>
+                        <br><h4>Price: </h4><p>Weekdays: ₱1000/player</p><p>Holidays & Weekend: ₱1500/player</p>
+                        <br><h4>Reviews: </h4><span>I've played several times. The course is quite expensive as a public golf course especially for the foreigners. Need proper maintenance. Some fairways is muddy. Caddies are very nice and food is ok. - japanese chiko (9 months ago)</span>
+                        <br><br><span>Nice golf course located next to Manila airport. Course layout is good, greens were little bit slow and Sandy today. Clubhouse facilities are good, they have a sauna in mens locker room. - Taneli (3 years ago)</span>
+                        <br><br><h4>Pictures:</h4><img id="modalpics" src="/img/golf.jpg" /><img id="modalpics" src="/img/villamor.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="venue-button" onclick="window.location.href='/register';">Book Now</button>
+    </div>
+
+        <div class="venue">
+            <div>
+                <img id="icon" src="/img/icons8-tennis-racquet-48.png" />
+                <h3 class="venue-title" id="tennis">Colegio San Agustin Tennis Court</h3>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0148934780054!2d121.02457791509154!3d14.541140789840322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c92211914e93%3A0xfc0027f9c5c2a6e0!2sColegio%20San%20Agustin%20Tennis%20Court!5e0!3m2!1sen!2sph!4v1679896187064!5m2!1sen!2sph" width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><span>  (4.6)</span>
+                </p>
+            </div>
+            <div class="schedules">
+                <h4>Available Schedules: </h4>
+                    <li>Monday, April 3, 2023 - 12:00pm-02:00pm</li>
+                    <li>Monday, April 3, 2023 - 03:00pm-05:00pm</li><br>
+                    <li>Monday, April 3, 2023 - 05:00pm-07:00pm</li>
+                    <li>Tuesday, April 4, 2023 - 12:00pm-02:00pm</li><br><br>
+            </div>
+             <!-- Trigger/Open The Modal -->
+             <button class="modal-button" href="#myModal5">More Details</button>
+
+            <!-- The Modal -->
+            <div id="myModal5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Colegio San Agustin Tennis Court</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Description: </h4><p>Collegio San Agustin Tennis Court is a private tennis facility located at Colegio San Agustin, Makati, Metro Manila, Philippines. There are 2 private tennis courts at this tennis location. The facility is open to students, faculty members, and the general public, making it a popular destination for tennis enthusiasts in the area.</p>
+                        <br><h4>Amenities: </h4><p>2 Tennis Courts</p>
+                        <br><h4>Price: </h4><p>₱800/hour</p>
+                        <br><h4>Reviews: </h4><span>Courts are really really good but are spaced too close to each other. Two courts situated at both ends will keep you bothered since anytime you may bumped with the wall if the other player will give you cross court balls. - Kevin Montañez (4 years ago; 4/5 stars)</span>
+                        <br><br><span>Good tennis courts but hard to access if you don't have a car as the Grab services are not allowed inside to pick up - Hyren Peterson (3 years ago; 5/5 stars)</span>
+                        <br><br><h4>Pictures:</h4><img id="modalpics" src="/img/csa.jpg" /><img id="modalpics" src="/img/tennis.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="venue-button" onclick="window.location.href='/register';">Book Now</button>
+        </div>
+    </div> --}}
+    <div class="contain" id="here">
+    </div>
+    <script src="/js/listings.js"></script>

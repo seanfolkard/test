@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+
+.create-account.container{
+	width: 600px;
+    padding-top: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	margin-top: 200px;
+}
+
+input[type = text], input[type = email], input[type = date], input[type = tel], input[type = datetime-local], select {
+
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+	display: inline-block;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+input[type = text], input[type = password], input[type = number], select {
+    width: 25%;
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+	display: inline-block;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+input[type = email], select {
+    width: 45%;
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+	display: inline-block;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+input[type = date], select {
+    width: 25%;
+    padding: 5px 12px;
+    margin: 4px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+	display: inline-block;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+#lastname{
+	margin-left: 20px;
+}
+
+.title{
+	font-size: medium;
+}
+
+input[type = button], input[type = submit] {
+    text-align: center;
+    padding: 5px 12px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    appearance: none;
+}
+
+#back-btn{
+	float: left;
+	margin-right: 20px;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.list{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.new-account{
+    margin-top: 215px;
+}

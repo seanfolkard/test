@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#icon{
+    float:left;
+    width: 24px;
+    height: 24px
+}
+
+#modalpics{
+    width: 325px;
+    height: 200px;
+}
+
+
+.list{
+    margin-top: 5px;
+}
+
+.venue-button {
+    position: relative;
+    width: 20%;
+    text-align: center;
+    display: block;
+    padding: 5px 12px;
+    line-height: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    appearance: none;
+}
+
+.modal-button{
+    position: relative;
+    width: 20%;
+    text-align: center;
+    display: block;
+    padding: 5px 12px;
+    line-height: 20px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    appearance: none;
+    float: left;
+}
+
+.venue-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.venue {
+    background-color: var(--cont-bg-color);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px var(--shadow);
+    line-height: 21px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.venue img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--input-border);
+}
+
+.venue .info {
+    flex: 1;
+}
+
+.venue h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.venue .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.venue .rating i {
+    color: #ffc107;
+    margin-right: 5px;
+}
+
+.venue p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.venue-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.venue img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.venue-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.venue-location {
+    font-size: 18px;
+    display:flex;
+    justify-items: last baseline;
+}
+
+.venue-rating {
+    font-size: 24px;
+    margin: 0;
+}
+
+.checked {
+    color: gold;
+}
+
+#vne{
+    margin-top: 70px;
+}
+  
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #36c892;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+* {
+    box-sizing: border-box;
+}
+  
+  /* Style the search field */
+form.submit-bar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+  
+  /* Style the submit button */
+form.submit-bar button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #36c892;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+  
+form.submit-bar button:hover {
+    background: #0b7dda;
+}
+  
+  /* Clear floats */
+form.submit-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.submit-bar{
+    margin-top: 150px;
+    margin-left: 500px;
+}
+
+.dropbtn {
+    background-color: #36c892;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #0b7dda;}

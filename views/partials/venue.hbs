@@ -1,0 +1,50 @@
+{{#each venues}}
+    <div class="venue">
+        <div>
+            {{#each iconURLs}}
+            <img id="icon" src={{this}} />
+            {{/each}}
+            <h3 class="venue-title">{{title}}</h3>
+        </div>
+        <iframe src={{{mapsURL}}} width="750" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="venue-info">
+            <p class="venue-rating">
+                {{#each ratingInt}}
+                <span class="fa fa-star checked"></span>
+                {{/each}}
+                {{#each noStar}}
+                    <span class="fa fa-star"></span>
+                {{/each}}
+                <span>  ({{rating}})</span>
+            </p>
+        </div>
+        <button class="modal-button" href="#myModal{{_id}}">More Details</button>
+
+        <!-- The Modal -->
+        <div id="myModal{{_id}}" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>{{title}}</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Description: </h4><p>{{desc}}</p>
+                    <br><h4>Amenities Provided: </h4><p>{{#each amenities}} {{this}} <br> {{/each}}</p>
+                    <h4>Price: </h4><p>₱{{price.cost}}/{{price.per}}</p>
+                    <br><h4>Reviews: </h4><span></span>
+                    {{#each reviews}}
+                        <span>{{this.content}} - {{this.author}} ({{this.date}}; {{this.rating}}/5)</span>
+                        <br><br>
+                    {{/each}}
+                    <h4>Pictures:</h4>
+                    {{#each picsURLs}}
+                    <img id="modalpics" src={{this}} />
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <button class="venue-button" venue={{_id}}>Book Now</button>
+    </div>
+{{/each}}
